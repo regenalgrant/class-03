@@ -3,9 +3,9 @@ img {
 }
 
 body {
-  line-height: 1.5;
+  line-height: 2.5;
   font-size: 100%;
-  color: #313131;
+  color: red;
 }
 
 article {
@@ -33,7 +33,7 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  color: red;
 }
 
 a:visited {
