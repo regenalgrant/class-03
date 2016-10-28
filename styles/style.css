@@ -1,12 +1,13 @@
-@media only screen and (min-width: 80px) and (max-width: 1080px) {
+@media only screen and (min-width: 80px){
 	.container {
-		width: 940px;
+		width: 2000px;
 	}
 html{
 	/*display: block;*/
 }
 h1 {
-	background-image: url(http://placehold.it/350x150);
+	color:white;
+	background-image: url("http://placehold.it/350x150");
 	background: rgba(0,0,0,0.41);
   height: 100%;
 	width: 100%;
@@ -20,7 +21,7 @@ p {
 body {
   clear: both;
   background-color: #6D7993;
-  background-image: url("image/background.png");
+  background-image: url("../image/background.png");
   background-repeat: no-repeat;
   background-size: 100vw  ;
   color: white;
@@ -161,7 +162,7 @@ footer{
 }
 #toggle {
   display: none;
-}*/
+}
 /**
 Hamburger
 **/
@@ -227,7 +228,7 @@ nav a:hover:before {
   width: 20%;
   top: 0%; left: 70%; right: 0; bottom: 0%;
   overflow: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   transform: scale(0);
   background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
