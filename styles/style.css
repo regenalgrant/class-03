@@ -1,9 +1,9 @@
-@media only screen and (min-width: 80px){
+@media only screen and (min-width: 414px){
 	.container {
 		width: 2000px;
 	}
 html{
-	/*display: block;*/
+
 }
 h1 {
 	color:white;
@@ -12,12 +12,10 @@ h1 {
   height: 100%;
 	width: 100%;
 }
-
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2em;
 }
-
 body {
   clear: both;
   background-color: #6D7993;
@@ -55,13 +53,45 @@ main {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 .main, ol, li, a, #none  {
-  font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+  display: grid;
   text-align: left;
   font-size: 1.0em;
   list-style-type: none;
   position: relative;
   color: white;
   text-decoration: none;
+}
+HTML  SCSS   Result
+Edit on
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+	background: tomato;
+	padding: 15px;
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+	line-height: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
 }
 input {
     width: 100%;
@@ -95,6 +125,16 @@ h1 {
 h2 {
   font-size: 1.2em;
 }
+h3{
+color:white;
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
 article {
   max-width: 100vw;
   padding: 5%;
@@ -102,6 +142,7 @@ article {
 section {
   max-width: 100vw;
 }
+
 #bio {
   text-align: left;
   font-size: 44px;
@@ -112,57 +153,16 @@ footer{
   width: 100%;
   text-align: center;
   background-color: clear;
-  color:white;
+  color:yellow;
   padding-bottom: 1px;
   margin-top: 10px;
   position: fixed;
   bottom: 0px;
 }
-/*#cloud-scroll {
-  clear:both;
-  width:100%;
-  height: 200px;
-  background: url(./images/allpics.png);
-  position: fixed;
-  top: 0px;
-  z-index: 99;
-  @-webkit-animation: backgroundScroll 20s linear infinite;
-  animation: backgroundScroll 20s linear infinite;
-}
-@-webkit-keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-@keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}*/
 #toggle {
   display: none;
 }
 
-/*#cloud-scroll2 {
-  clear:both;
-  width:100%;
-  height: 200px;
-  background: url(./images/party.png);
-  position: fixed;
-  bottom: 0px;
-  z-index: -100;
-  @-webkit-animation: backgroundScroll 20s linear infinite;
-  animation: backgroundScroll 20s linear infinite;
-}
-@-webkit-keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-@keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-#toggle {
-  display: none;
-}
 /**
 Hamburger
 **/
@@ -217,7 +217,7 @@ nav a:before {
   transition: all 0.2s ease-in-out;
 }
 nav a:hover {
-  color: white;
+  color: red;
 }
 nav a:hover:before {
   height: 100%;
