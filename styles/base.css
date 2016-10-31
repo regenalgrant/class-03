@@ -3,13 +3,14 @@ img {
 }
 
 body {
+  text-align: center;
   line-height: 1.5;
   font-size: 100%;
-  color: #313131;
+  color: white;
 }
 
 article {
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   margin: 0 2.5%;
   padding: 2% 0;
 }
@@ -17,10 +18,11 @@ article {
 /*TEXT STYLES
 =======================================*/
 p {
-  font-size: 1em;
+  font-size: 2em;
 }
 
 address {
+  color:grey;
   display: inline-block;
 }
 
@@ -29,11 +31,11 @@ address {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: #d5d5d5;
+  color: white;
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  color: tomato;
 }
 
 a:visited {

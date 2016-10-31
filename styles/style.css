@@ -1,16 +1,50 @@
-@media only screen and (min-width: 80px){
+@media only screen and (min-width: 414px){
 	.container {
 		width: 2000px;
 	}
-html{
-	/*display: block;*/
-}
-h1 {
-	color:white;
-	background-image: url("http://placehold.it/350x150");
-	background: rgba(0,0,0,0.41);
-  height: 100%;
+	h5{
+  background-image: url(../image/background.png);
+  font-family: 'Sacramento', cursive;
+	font-size: 65px;
+	color:orange;
 	width: 100%;
+	height: 40%;
+	margin-top: 0px;
+	background-repeat: no-repeat;
+	position: fixed;
+	z-index: 1;
+	}
+	h4{
+		margin-left:50%;
+		color:white;
+		font-size: 15px;
+		margin-top: 150px;
+		position: fixed;
+		z-index: 1;
+	}
+ h1{
+	color:black;
+	text-align: center;
+  height: 40%;
+	width: 100%;
+	background-size: 150vw;
+	font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+}
+h3{
+color:white;
+display: block;
+font-size: 1.17em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
 }
 
 p {
@@ -19,20 +53,20 @@ p {
 }
 
 body {
-  clear: both;
-  background-color: #6D7993;
-  background-image: url("../image/background.png");
-  background-repeat: no-repeat;
-  background-size: 100vw  ;
-  color: white;
+	clear: both;
+	background-color: transparent;
+  color:black;
   font-family: arial;
   text-align: center;
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: inherit;
   overflow-x: hidden;
   margin: 0px;
-}
 
+}
+ul, menu, dir {
+    display: block;
+	}
 img.about {
   height: 200px;
   width: 200px;
@@ -42,26 +76,59 @@ img.about {
 
 main {
   font-family: 'Josefin Sans', sans-serif;
-  clear: both;
+	font-size: 11px;
+	color:#3f51b5;
+	clear: both;
   text-align: center;
   overflow-y: hidden;
   max-width: 100%;
-  margin-top: 200px;
+  margin-top: 120px;
   margin-bottom: 200px;
-  padding: 5%;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  padding: 16%;
+	background: #bdc3c7; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #bdc3c7 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .main, ol, li, a, #none  {
-  font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	color:#3f51b5;
+  display: grid;
   text-align: left;
-  font-size: 1.0em;
+  font-size: 20px;
   list-style-type: none;
   position: relative;
-  color: white;
+  /*color: white;*/
   text-decoration: none;
+}
+
+@import "compass/css3";
+
+.article-body {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.article-body p {
+	display: inline-table;
+	background: #708090;
+	padding: 15px;
+	width: 100%;
+	height: 150px;
+	margin-top: 50px;
+	line-height: 20px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: inherit;
 }
 input {
     width: 100%;
@@ -86,83 +153,24 @@ input[type="checkbox"]:checked {
   appearance: none;
   background: red;
 }
-h1 {
-  font-size: 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-style: normal;
-  text-align: center;
-}
-h2 {
-  font-size: 1.2em;
-}
+
 article {
   max-width: 100vw;
   padding: 5%;
 }
 section {
+	color: grey;
   max-width: 100vw;
 }
+
 #bio {
   text-align: left;
   font-size: 44px;
 }
-footer{
-  z-index:1;
-  clear:both;
-  width: 100%;
-  text-align: center;
-  background-color: clear;
-  color:white;
-  padding-bottom: 1px;
-  margin-top: 10px;
-  position: fixed;
-  bottom: 0px;
-}
-/*#cloud-scroll {
-  clear:both;
-  width:100%;
-  height: 200px;
-  background: url(./images/allpics.png);
-  position: fixed;
-  top: 0px;
-  z-index: 99;
-  @-webkit-animation: backgroundScroll 20s linear infinite;
-  animation: backgroundScroll 20s linear infinite;
-}
-@-webkit-keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-@keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}*/
 #toggle {
   display: none;
 }
 
-/*#cloud-scroll2 {
-  clear:both;
-  width:100%;
-  height: 200px;
-  background: url(./images/party.png);
-  position: fixed;
-  bottom: 0px;
-  z-index: -100;
-  @-webkit-animation: backgroundScroll 20s linear infinite;
-  animation: backgroundScroll 20s linear infinite;
-}
-@-webkit-keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-@keyframes backgroundScroll {
-  from {background-position: 0 0;}
-  to {background-position: -400px 0;}
-}
-#toggle {
-  display: none;
-}
 /**
 Hamburger
 **/
@@ -217,7 +225,7 @@ nav a:before {
   transition: all 0.2s ease-in-out;
 }
 nav a:hover {
-  color: white;
+  color: red;
 }
 nav a:hover:before {
   height: 100%;
@@ -230,9 +238,9 @@ nav a:hover:before {
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   transform: scale(0);
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 100%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 100%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 100%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
   z-index: 101;
 }
@@ -277,6 +285,18 @@ Animations
   top: 0;
   transform: scale(1);
 }
+footer{
+	z-index:1;
+  clear:both;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+  color:yellow;
+  padding-bottom: 0px;
+  margin-top: 100px;
+  position: fixed;
+  bottom: 0px;
+}
 /*
 #info-submit, #edit-event-info, .button, button {
 background-color: #aac556 ;
@@ -300,8 +320,8 @@ background-color: #4CAF50 ;
   font-size: 20px;
   padding: 5px 10px 5px 10px;
 }*/
-/*
-.header-td {
+
+/*.header-td {
   background-color: #aac556;
   border-radius: 15px 15px 0px 0px;
   padding: 10px 5px 5px 5px;
@@ -316,9 +336,9 @@ background-color: #4CAF50 ;
   left: 50%;
   transform: translateX(-50%);
   z-index: 200;
-  border-radius: 15px;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-}
+  border-radius: 15px;*/
+  /*background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  /*background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */*/*/
+}*/
