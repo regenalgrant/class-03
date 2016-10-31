@@ -33,6 +33,7 @@ By <address><a href="{{authorUrl}}">{{author}}</a></address>
   <script id="category-filter-template" type="text/x-handlebars-template">
 <option value="{{category}}">{{category}}</option>
   </script>
+ <!-- Add in handlebars code here to create a virtual template {{title}} {{body}} {{category}} etc.-->
 </head>
 <body>
   <h5>Heijnen Group</h5>
@@ -140,6 +141,8 @@ By <address><a href="{{authorUrl}}">{{author}}</a></address>
      </select>
             </li>
           </ul>
+  <main>
+    <!-- add in the #articles section/article tag here so that the handlebars code knows where to append the article template -->
         </div>
     <article class="clearfix" data-author="regenal" data-category="security">
     <header>
