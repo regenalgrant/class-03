@@ -4,7 +4,7 @@ var articles = [];
 function Article (opts) {
   this.author = opts.author;
   this.authorUrl = opts.authorUrl;
-  this.title = opts.title;
+  this.subject = opts.subject;
   this.category = opts.category;
   this.body = opts.body;
   this.publishedOn = opts.publishedOn;

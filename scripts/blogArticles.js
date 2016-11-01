@@ -1,9 +1,9 @@
 var ourLocalData = [
   {
-    "title":     "Biggest cybersecurity threats in 2016",
-    "category":  "Cybersecurity",
-    "author":     "Harriet Taylor",
-    "authorUrl":  "http://www.cnbc.com/harriet-taylor/",
+    "subject":     "Biggest cybersecurity threats in 2016",
+    "category":    "Cybersecurity",
+    "author":      "harriet-taylor",
+    "authorUrl":   "http://www.cnbc.com/harriet-taylor/",
     "publishedUrl": "http://www.cnbc.com/2015/12/28/biggest-cybersecurity-threats-in-2016.html",
     "body":        "<p>Headless worms, machine-to-machine attacks, jailbreaking, ghostware and two-faced malware: The language of cybersecurity incites a level of fear that seems appropriate, given all that's at stake. </p>"
   },

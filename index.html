@@ -15,7 +15,7 @@
 <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7v5ASc8.png">
 <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Bad+Script|Calligraffitti|Crafty+Girls|Grand+Hotel|Great+Vibes|Marck+Script|Niconne|Parisienne|Pinyon+Script|Reenie+Beanie|Roboto|Sacramento|Yesteryear" rel="stylesheet">
 <script id="article-template" type="text/x-handlebars-template">
-<article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+<article class="clearfix" data-author="{{title}}" data-category="{{category}}">
 <header>
   <h1>{{title}}</h1>
 <div class="byline">
@@ -28,7 +28,7 @@ By <address><a href="{{authorUrl}}">{{author}}</a></address>
 </article>
   </script>
   <script id="author-filter-template" type="text/x-handlebars-template">
-<option value="{{author}}">{{author}}</option>
+<option value="{{title}}">{{title}}</option>
   </script>
   <script id="category-filter-template" type="text/x-handlebars-template">
 <option value="{{category}}">{{category}}</option>
