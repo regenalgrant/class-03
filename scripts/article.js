@@ -7,13 +7,13 @@
       this[key] = opts[key];
     }
   }
-
+  Articles.allArticles = [];
   /*this is a method on the prototype so each object comes with its own html template*/
   Article.prototype.toHtml = function(scriptTemplateId) {
     var template = Handlebars.compile($(scriptTemplateId).text());
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn)) / 60 / 60 / 24 / 1000);
     this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
-    this.body = this.body;
+    this.body = marked(this.body);
     return template(this);
   };
 
@@ -36,6 +36,7 @@
   };
 
   Article.fetchAll = function(next) {
+
     if (localStorage.hackerIpsum) {
       Article.loadAll(JSON.parse(localStorage.hackerIpsum));
       next();
@@ -85,5 +86,6 @@
       };
     });
   };
+  Article.creatTable();
   module.Article = Article;
 })(window);

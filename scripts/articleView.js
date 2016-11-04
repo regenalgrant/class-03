@@ -1,7 +1,6 @@
 (function(module){
   var articleView = {};
 
-
   articleView.handleMainNav = function() {
     $('.main-nav').on('click', '.tab', function() {
       $('.tab-content').hide();
@@ -11,7 +10,6 @@
   };
   articleView.setTeasers = function() {
     $('#portfolio *:nth-of-type(n+2)').hide();
-
 
     $('#articles').on('click', 'a.read-on', function(event) {
       event.preventDefault();
@@ -28,6 +26,6 @@
     articleView.setTeasers();
   };
 
-  // Article.fetchAll(articleView.renderIndexPage);
+  Article.fetchAll(articleView.renderIndexPage);
   module.articleView = articleView;
 })(window);
