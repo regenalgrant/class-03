@@ -101,5 +101,5 @@ Article.numWordsByAuthor = function() {
   });
 };
 
- module.Article = Article;)
+ module.Article = Article)
 (window);

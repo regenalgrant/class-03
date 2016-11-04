@@ -1,19 +1,17 @@
 img {
-  max-width: 100%;
+  max-width: 65%;
 }
 
-body {
+/*body {
   text-align: center;
   line-height: 1.5;
   font-size: 100%;
   color: white;
-}
-
+}*/
 article {
-  border-bottom: 4px solid black;
-  margin: 0 2.5%;
-  padding: 2% 0;
-}
+    border-bottom: 4px solid black;
+    margin: 0 11.5%;
+    padding: 2% 0;
 
 /*TEXT STYLES
 =======================================*/
