@@ -6,8 +6,9 @@
       "author":"harriet-taylor",
       "authorUrl":"http://www.cnbc.com/harriet-taylor/",
       "publishedUrl":"http://www.cnbc.com/2015/12/28/biggest-cybersecurity-threats-in-2016.html",
-      "body":"<p>Headless worms, machine-to-machine attacks, jailbreaking, ghostware and two-faced malware: The language of cybersecurity incites a level of fear that seems appropriate, given all that's at stake.</p>"
-   }
+      "publishedOn":"2015/12/28",
+      "body":"<p> Headless worms, machine-to-machine attacks, jailbreaking, ghostware and two-faced malware: The language of cybersecurity incites a level of fear that seems appropriate, given all that's at stake.</p>"
+   },
 
    {
      "id": 3,
@@ -16,6 +17,7 @@
       "author":"DHS",
       "authorUrl":"https://www.dhs.gov/topic/cybersecurity",
       "publishedUrl":"https://www.dhs.gov/topic/combating-cyber-crime",
-      "body":"<p>Today’s world is more interconnected than ever before. Yet, for all its advantages, increased connectivity brings increased risk of theft, fraud, and abuse. As Americans become more reliant on modern technology, we also become more vulnerable to cyberattacks such as corporate security breaches, spear phishing, and social media fraud. Complementary cybersecurity and law enforcement capabilities are critical to safeguarding and securing cyberspace. Law enforcement performs an essential role in achieving our nation’s cybersecurity objectives by investigating a wide range of cyber crimes, from theft and fraud to child exploitation, and apprehending and prosecuting those responsible. The Department of Homeland Security (DHS) works with other federal agencies to conduct high-impact criminal investigations to disrupt and defeat cyber criminals, prioritize the recruitment and training of technical experts, develop standardized methods, and broadly share cyber response best practices and tools. Criminal investigators and network security experts with deep understanding of the technologies malicious actors are using and the specific vulnerabilities they are targeting work to effectively respond to and investigate cyber incidents.</p>"
+      "publishedOn":"2016/09/12",
+      "body":"<p> Today’s world is more interconnected than ever before. Yet, for all its advantages, increased connectivity brings increased risk of theft, fraud, and abuse. As Americans become more reliant on modern technology, we also become more vulnerable to cyberattacks such as corporate security breaches, spear phishing, and social media fraud. Complementary cybersecurity and law enforcement capabilities are critical to safeguarding and securing cyberspace. Law enforcement performs an essential role in achieving our nation’s cybersecurity objectives by investigating a wide range of cyber crimes,from theft and fraud to child exploitation, and apprehending and prosecuting those responsible. The Department of Homeland Security (DHS) works with other federal agencies to conduct high-impact criminal investigations to disrupt and defeat cyber criminals, prioritize the recruitment and training of technical experts, develop standardized methods, and broadly share cyber response best practices and tools. Criminal investigators and network security experts with deep understanding of the technologies malicious actors are using and the specific vulnerabilities they are targeting work to effectively respond to and investigate cyber incidents.</p>"
    }
 ]

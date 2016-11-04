@@ -1,26 +1,33 @@
+(function(module){
+  var articleView = {};
 
-var articleView = {};
+
+  articleView.handleMainNav = function() {
+    $('.main-nav').on('click', '.tab', function() {
+      $('.tab-content').hide();
+      $('#' + $(this).data().content()).fadeIn();
+    });
+    $('.main-nav .tab:first').click();
+  };
+  articleView.setTeasers = function() {
+    $('#portfolio *:nth-of-type(n+2)').hide();
 
 
-articleView.handleMainNav = function() {
-  $('.main-nav').on('click', '.tab', function() {
-    $('.tab-content').hide();
-    $('#' + $(this).data('content')).fadeIn();
-  });
-  $('.main-nav .tab:first').click();
-};
-articleView.setTeasers = function() {
-  $('.article-body *:nth-of-type(n+2)').hide();
+    $('#articles').on('click', 'a.read-on', function(event) {
+      event.preventDefault();
+      $(this).parent().find('*').fadeIn();
+      $(this).hide();
+    });
+  };
+  articleView.renderIndexPage = function() {
+    Article.allArticles.forEach(function(article) {
+      $('#portfolio').append(article.toHtml('#article-template'));
+    });
+    $('#numFacts').text(Article.numWordsAll());
+    articleView.handleMainNav();
+    articleView.setTeasers();
+  };
 
-  $('#articles').on('click', 'a.read-on', function(event) {
-    event.preventDefault();
-    $(this).parent().find('*').fadeIn();
-    $(this).hide();
-  });
-};
-
-// articleView.populateFilters();
-// articleView.handleCategoryFilter();
-// articleView.handleAuthorFilter();
-articleView.handleMainNav();
-articleView.setTeasers();
+  // Article.fetchAll(articleView.renderIndexPage);
+  module.articleView = articleView;
+})(window);
