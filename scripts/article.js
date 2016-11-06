@@ -7,7 +7,7 @@
       this[key] = opts[key];
     }
   }
-  Articles.allArticles = [];
+  Article.allArticles = [];
   /*this is a method on the prototype so each object comes with its own html template*/
   Article.prototype.toHtml = function(scriptTemplateId) {
     var template = Handlebars.compile($(scriptTemplateId).text());
@@ -86,6 +86,6 @@
       };
     });
   };
-  Article.creatTable();
+
   module.Article = Article;
 })(window);

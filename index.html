@@ -11,26 +11,18 @@
 <link rel="stylesheet" href="styles/modules.css">
 <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7v5ASc8.png">
 <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Bad+Script|Calligraffitti|Crafty+Girls|Grand+Hotel|Great+Vibes|Marck+Script|Niconne|Parisienne|Pinyon+Script|Reenie+Beanie|Roboto|Sacramento|Yesteryear" rel="stylesheet">
-<script id="article-template" type="text/x-handlebars-template">
-<article class="clearfix" data-author="{{subject}}" data-category="{{category}}">
+      <script id="article-template" type="text/x-handlebars-template">
+<article class="clearfix" data-author="{{name}}" data-category="{{category}}">
 <header>
-          <h1>{{title}}</h1>
-<div class="byline">
-          By <address><a href="{{authorUrl}}">{{author}}</a></address>
-          {{publishStatus}}
-</div>
-</header>
-<section class="article-body">{{{body}}}</section>
-          <a href="" class="read-on">Read on &rarr;</a>
-</article>
-          <option value="{{subject}}">{{subject}}</option>
-          <option value="{{category}}">{{category}}</option>
-</script>
-<script id="category-filter" type="text/x-handlebars-template">
-          <li><a href="">{{category}}</a></li>
-</script>
+      <script id="portfolio-template" type="text/x-handlebars-templates">
+      <h2>{{name}}</h2>
+      <p>Category {{category}}
+      <p>Author {{author}}
+      <p>published {{publishedOn}}</p>
+      {{{body}}}
+      </script>
+      </script>
 </head>
-
 <body>
 <div id="page-wrap">
           <h5>Heijnen Group</h5>
@@ -41,66 +33,66 @@
 <div class id="wrap">
           <input id="toggle" type="checkbox"></input>
           <label for="toggle" class="hamburger">
-<div class="top-bun"></div>
-<div class="meat"></div>
-<div class="bottom-bun"></div>
-</label>
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+          </label>
 <div class="nav">
-<div class="nav-wrapper">
-<nav class="main-nav">
-<li class="tab" data-content="articles"><a href="">Home</a>
+          <div class="nav-wrapper">
+          <nav class="main-nav">
+          <li class="tab" data-content="home"><a href="">Home</a>
           <br>
-<li class="tab" data-content="subject"><a href="">Subject</a>
+          <li class="tab" data-content="subject"><a href="">Subject</a>
           <br>
           <li class="tab" data-content="profile"><a href="">Profile</a>
           <br>
-          <li class="tab" data-content="about"><a href="">Contact</a>
+          <li class="tab" data-content="contact"><a href="">Contact</a>
           <a href="http://github.com/" target="_blank" class="icon-github"> GitHub</a>
           <a href="https://www.linkedin.com/in/regenal-grant-94640a24" target="_blank" class="icon-linkedn">Linkedn</a>
           <br>
-</nav>
+          </nav>
+</div>
 </div>
 </div>
 </div>
 </header>
 <main>
-<section id="articles" class="tab-content" style="display: block;">
+<section id="article" class="tab-content" style="display: block;">
 <article class="clearfix" data-author="regenal" data-category="security">
-    <header>
-        <h1>Company Biography</h1>
-        <div class="byline">
-            By <address><a href="https://www.linkedin.com/in/regenal-grant-94640a24">Regenal Grant</a></address>
-        </div>
-    </header>
+<header>
+<h1>Company Biography</h1>
+<div class="byline">
+By <address><a href="https://www.linkedin.com/in/regenal-grant-94640a24">Regenal Grant</a></address>
+</div>
+</header>
+<section id="portfolio" class="article-body">
+    <p>Veterans Owned Small Business and Small Disadvantaged Business presently a Certified Service-Disabled Veteran-Owned Small Business (SDVOSB). Heavily involved in building and maintaining a strong infrastructure for a company dealing with CyberSecurity issues.  This is a startup covering the areas of Seattle Washington and Washington, DC</p>
+    <div style="display:none;"></div>
 
-    <section id="portfolio" class="article-body">
-        <p>Veterans Owned Small Business and Small Disadvantaged Business presently a Certified Service-Disabled Veteran-Owned Small Business (SDVOSB). Heavily involved in building and maintaining a strong infrastructure for a company dealing with CyberSecurity issues.  This is a startup covering the areas of Seattle Washington and Washington, DC</p>
-        <p><img src="image/1.png" class="pull-left"> Cupidatat pancetta chuck fugiat shankle dolor drumstick excepteur spare ribs duis. Meatloaf beef ribs et picanha eu in qui dolore tongue enim spare ribs capicola est pork chop swine.
-            Ipsum strip steak nostrud ham hock qui irure. Picanha occaecat prosciutto, rump tempor jerky proident voluptate short loin jowl.</p>
-        <p><img src="image/2.png" class="pull-right">Leberkas pariatur commodo ex adipisicing kevin magna meatball turducken id shoulder consectetur officia ham. Ribeye ullamco porchetta, velit fatback beef dolor pastrami swine salami tail. Turducken shoulder aliquip, biltong nostrud enim dolore
-            chuck.</p>
-        <p><img src="image/3.png" class="pull-left">Jerky lorem consectetur tempor consequat pig magna incididunt filet mignon ullamco elit ea ut frankfurter. Andouille salami pig capicola. Short ribs cupim sirloin, in shank non landjaeger tri-tip. Hamburger cillum ground round, ham minim ex short
-            ribs ribeye.</p>
-        <p><img src="image/4.png" class="pull-right">Prosciutto incididunt cow ball tip jowl ex. Nostrud reprehenderit tempor consequat sunt mollit ball tip salami kielbasa excepteur in est eiusmod. Corned beef ham hock cupidatat qui boudin filet mignon tempor, ut pork loin adipisicing doner t-bone
-            short ribs pancetta. Swine veniam short ribs labore bresaola picanha ground round nostrud. Est turkey voluptate beef, fatback frankfurter pig in. Biltong bresaola salami short loin enim ut filet mignon.</p>
-        <p><img src="image/5.png" class="pull-left">Salami elit dolore sunt, in fatback porchetta est shankle ad boudin ea short loin. Velit cow prosciutto venison tri-tip laboris, magna sirloin. In corned beef eu magna dolore porchetta andouille. Chicken sunt occaecat pig.</p>
-    </section>
+    <p><img src="image/1.png" class="pull-left"> Cupidatat pancetta chuck fugiat shankle dolor drumstick excepteur spare ribs duis. Meatloaf beef ribs et picanha eu in qui dolore tongue enim spare ribs capicola est pork chop swine.
+        Ipsum strip steak nostrud ham hock qui irure. Picanha occaecat prosciutto, rump tempor jerky proident voluptate short loin jowl.</p>
+    <p><img src="image/2.png" class="pull-right">Leberkas pariatur commodo ex adipisicing kevin magna meatball turducken id shoulder consectetur officia ham. Ribeye ullamco porchetta, velit fatback beef dolor pastrami swine salami tail. Turducken shoulder aliquip, biltong nostrud enim dolore
+        chuck.</p>
+    <p><img src="image/3.png" class="pull-left">Jerky lorem consectetur tempor consequat pig magna incididunt filet mignon ullamco elit ea ut frankfurter. Andouille salami pig capicola. Short ribs cupim sirloin, in shank non landjaeger tri-tip. Hamburger cillum ground round, ham minim ex short
+        ribs ribeye.</p>
+    <p><img src="image/4.png" class="pull-right">Prosciutto incididunt cow ball tip jowl ex. Nostrud reprehenderit tempor consequat sunt mollit ball tip salami kielbasa excepteur in est eiusmod. Corned beef ham hock cupidatat qui boudin filet mignon tempor, ut pork loin adipisicing doner t-bone
+        short ribs pancetta. Swine veniam short ribs labore bresaola picanha ground round nostrud. Est turkey voluptate beef, fatback frankfurter pig in. Biltong bresaola salami short loin enim ut filet mignon.</p>
+    <p><img src="image/5.png" class="pull-left">Salami elit dolore sunt, in fatback porchetta est shankle ad boudin ea short loin. Velit cow prosciutto venison tri-tip laboris, magna sirloin. In corned beef eu magna dolore porchetta andouille. Chicken sunt occaecat pig.</p>
+</section>
     <a href="" class="read-on">Read on →</a>
-</article><div id="numFacts"></div>
 <section id="about" class="tab-content">
 </section>
 </header>
-<section>
-          <h1>Some of my interests:</h1>
+        </div>
           <ul>
           <li>Coding</li>
           <li>Sharing what I've learned</li>
           </ul>
 </section>
 <section id="article-export">
-  <label id="export-field" for="article-json" class="pull-right">
-    <input type="text" readonly id="article-json">
-  </label>
+<!-- <label id="export-field" for="article-json" class="pull-right">
+<input type="text" readonly id="article-json">
+</label> -->
 </section>
 </main>
 <footer>
@@ -110,7 +102,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script src="scripts/Articles.json"></script>
 <script src="scripts/marked.js"></script>
-<!-- <script src="scripts/article.js"></script> -->
+<script src="scripts/article.js"></script>
 <script src="scripts/articleView.js"></script>
+<script src="scripts/ajax.js"></script>
 </body>
 </html>
