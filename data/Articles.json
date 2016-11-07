@@ -1,24 +1,11 @@
 [
    {
-     "id": 2,
-      "subject":"Biggest cybersecurity threats in 2016",
-      "category":"Cybersecurity",
-      "author":"harriet-taylor",
-      "authorUrl":"http://www.cnbc.com/harriet-taylor/",
-      "publishedUrl":"http://www.cnbc.com/2015/12/28/biggest-cybersecurity-threats-in-2016.html",
-      "publishedOn":"2015/12/28",
-      "body":"<p> Headless worms, machine-to-machine attacks, jailbreaking, ghostware and two-faced malware: The language of cybersecurity incites a level of fear that seems appropriate, given all that's at stake.</p>"
+     "imgUrl":"image/1.png",
+      "body":"Headless worms, machine-to-machine attacks, jailbreaking, ghostware and two-faced malware: The language of cybersecurity incites a level of fear that seems appropriate, given all that's at stake."
    },
-
    {
-     "id": 3,
-      "subject":"Combating Cyber Crime",
-      "category":"Cybersecurity",
-      "author":"DHS",
-      "authorUrl":"https://www.dhs.gov/topic/cybersecurity",
-      "publishedUrl":"https://www.dhs.gov/topic/combating-cyber-crime",
-      "publishedOn":"2016/09/12",
-      "body : ''<p id="abouttemp">"As a working professional learning web development, I want to begin showcasing some of my work. This site is a continual work in progress and as such will reflect changes over time. </p>
-      <article class="pro-portfolio"> <h2>Professional Background</h2> <ul><li>Founder and COO at <a href="http://www.soonspoon.com"> SoonSpoon</a></li> <ul> <li>Provided last minute restaurant reservations to hungry diners </li><li>Hosted pop-ups to highlight local chefs and engage the user community</li><li>Acquired by <a href="https://reserve.com/">Reserve Media</a></li> </ul><li>Founder and COO at  <ahref="https://www.facebook.com/Rainbow-Chronicle-297693440261117/?fref=ts">Rainbow Chronicle</a> which became OutGrade</li> <ul> <li>A ratings site highlighting LGBT friendly areas in your town and across the world</li> <li>Ratings collected from all 50 states and 18 countries</li> <li>Recognized by Cambridge, MA City Council as a valuable asset.</li></ul> </ul> </article><article class="professional"> <br><h2>Professional Focus</h2> <p>Interactivity Tracking and Development</p> <p>Product Management and Sales</p> <p>Front-end Development</p> <p>User Experience and Interaction</p><p>Team Management</p><br></article>"
+     "imgUrl":"image/2.png",
+     "body":"LoremCupidatat pancetta chuck fugiat shankle dolor drumstick excepteur spare ribs duis. Meatloaf beef ribs et picanha eu in qui dolore tongue enim spare ribs capicola est pork chop swine.
+     Ipsum strip steak nostrud ham hock qui irure. Picanha occaecat prosciutto, rump tempor jerky proident voluptate short loin jowl."
    }
-];
+ ]
