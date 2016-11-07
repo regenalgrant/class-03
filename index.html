@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8">
-      <title>My Profile</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="styles/style.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-      <link rel="stylesheet" href="styles/base.css">
-      <link rel="stylesheet" href="styles/layout.css">
-      <link rel="stylesheet" href="styles/modules.css">
-      <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7v5ASc8.png">
-      <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Bad+Script|Calligraffitti|Crafty+Girls|Grand+Hotel|Great+Vibes|Marck+Script|Niconne|Parisienne|Pinyon+Script|Reenie+Beanie|Roboto|Sacramento|Yesteryear" rel="stylesheet">
-      <script id="portfolio-template" type="text/x-handlebars-template"></script>
-   </head>
-   <header>
-   <script>
-      <article class="portfolio-view" data-author="{{name}}" data-category="{{category}}">
-      <h1 id="title-portfolio-template">{{title}}</h1>
-      <a href="" id="{{url}}"><img src="{{picture}}" alt="{{alt}}" id="{{category}}"/><figcaption id="figcaption-portfolio-view">{{description}}</figcaption></a>
-      {{publishStatus}}
-      {{{body}}}
-      <br>
-      <a href="#" class="read-on">Read on -> &rarr;</a>
-      </article>
-   </script>
-   </script>
-   </head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/layout.css">
+<link rel="stylesheet" href="styles/modules.css">
+<link rel="icon" type="image/x-icon" href="https://i.imgur.com/7v5ASc8.png">
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Bad+Script|Calligraffitti|Crafty+Girls|Grand+Hotel|Great+Vibes|Marck+Script|Niconne|Parisienne|Pinyon+Script|Reenie+Beanie|Roboto|Sacramento|Yesteryear" rel="stylesheet">
+<title>My Profile</title>
+<script id = "portfolio-items-template" type="text/x-handlebars-templates">
+{{{h4}}}
+<article class="portfolio-view" data-category="{{category}}">
+<h1 id="title-portfolio-text">{{title}}</h1>
+<a href="" id="{{url}}"><img src="{{picture}}" alt="{{alt}}" id="{{category}}"/><figcaption id="figcaption-portfolio-item">{{description}}</figcaption></a>
+{{publishStatus}}
+{{{body}}}
+<br>
+<a href="#" class="read-on">Show More &rarr;</a>
+</article>
+</script>
+<script id = "about-items-template" type="text/x-handlebars-templates">
+{{{h6}}}
+<figure class="abouti">
+<a href="{{url}}"><img src="{{img}}" alt="{{alt}}" height="{{height}}" width="{{width}}"></a>
+</figure>
+{{{body}}}
+ </script>
+ </head>
    <body>
+      <header>
       <div id="page-wrap">
          <h5>Heijnen Group</h5>
          <h4>"New shocking power in asymetric Cybersecurity"</h4>
@@ -64,8 +69,15 @@
             </div>
       </div>
       </header>
-      <section id="home-top-third" class="contentBtn-content">
+      <section id="top" class="contentBtn-content">
       <h6 class="index-title">Regenal Grant Portfolio </h6>
+      <article class="portfolio-view" data-category="category">
+        <h1 id="title-portfolio-item">Personal Bio</h1>
+          <a href="" id="data/Aricle.json"><img src="image/7.png" alt="" id="2"></a>
+          <p class="body-portfolio" style="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+          <br>
+          <a href="#" class="read-on">Show Less</a>
+      </article>
       </section>
       <section id="home-middle-third" class="contentBtn-content">
       <h6 class="index-title">About Me</h6>
@@ -109,9 +121,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
       <script src="data/Articles.json"></script>
       <script src="vendor/marked.js"></script>
+      <script src="scripts/app.js"></script>
+      <script src="scripts/aboutme.js"></script>
       <script src="scripts/article.js"></script>
       <script src="scripts/articleView.js"></script>
-      <script src="scripts/ajax.js"></script>
+      <script src="scripts/portfolio.js"></script>
       <script src="styles/normalize.css"></script>
    </body>
 </html>

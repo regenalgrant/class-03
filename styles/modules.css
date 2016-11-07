@@ -1,32 +1,25 @@
 .site-header {
-
 }
-
 .heading-group-h1 {
   float: left;
   padding: 0 0 .2em 1em;
 }
-
 .icon-menu {
   font-size: 3em;
   float: right;
 }
-
 .main-nav {
   padding: 0.1em;
 }
-
 .main-nav ul {
   display: none;
   padding: 0;
   list-style: none;
   clear: both;
 }
-
 .main-nav:hover ul {
   display: block;
 }
-
 .main-nav li {
   margin-right: .4em;
   font-size: 1.5em;
@@ -46,6 +39,39 @@
 .template {
   display: none;
 }
+article.portfolio-view {
+  display: inline;
+  margin: 2%;
+  text-align: center;
+}
+#abouttemp {
+  text-align: center;
+}
+.abouti {
+  width: 100%;
+}
+
+.abouti img:hover {
+  opacity: .8;
+}
+.pro-portfolio{
+  background-color: rgba(43, 43, 43, .85);
+  border-radius: 5%;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+}
+
+.pro-portfolio ul {
+  list-style-type: none;
+  text-align: left;
+  margin-right: 5%;
+}
+
+.pro-portfolio a{
+  text-decoration: none;
+  color: white;
+}
 
 .byline {
   color: black;
@@ -60,11 +86,9 @@
   .icon-menu {
     display: none;
   }
-
   .main-nav {
     padding: .2em .2em .2em 2em;
   }
-
   .main-nav ul {
     display: block;
   }
@@ -77,5 +101,26 @@
   .main-nav ul li:hover a {
     color: #29506D;
   }
+  article.portfolio-view {
+    display: inline-block;
+    width: 45%;
+    margin: 2% 1%;
+  }
+.abouti {
+  width: 80%;
+  display: inline-block;;
+  margin: auto;
+}
 
+
+  @media screen and (min-width:855px) {
+  article.portfolio-view {
+    display: inline-block;
+    width: 30%;
+    margin: 2% 1%;
+  }
+  .abouti {
+    width: 28%;
+    display: inline-block;;
+    margin: 2%;
 }

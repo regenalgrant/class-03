@@ -89,7 +89,11 @@ template {
 a {
   background-color: transparent;
 }
-
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
