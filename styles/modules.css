@@ -1,12 +1,10 @@
-.site-header {
+.project p {
+  display: block;
+  background-image: black;
 }
 .heading-group-h1 {
   float: left;
   padding: 0 0 .2em 1em;
-}
-.icon-menu {
-  font-size: 3em;
-  float: right;
 }
 .main-nav {
   padding: 0.1em;
@@ -27,59 +25,14 @@
   border-bottom: 1px solid #ccc;
 }
 
-#filters {
-  position: fixed;
-  padding:0px;
-  margin-right:10%;
-  padding-left:16%;
-  list-style: none;
-  z-index:1;
-}
 
 .template {
   display: none;
 }
-article.portfolio-view {
+article.projects {
   display: inline;
   margin: 2%;
   text-align: center;
-}
-#abouttemp {
-  text-align: center;
-}
-.abouti {
-  width: 100%;
-}
-
-.abouti img:hover {
-  opacity: .8;
-}
-.pro-portfolio{
-  background-color: rgba(43, 43, 43, .85);
-  border-radius: 5%;
-  text-align: center;
-  padding: 2%;
-  margin: 2%;
-}
-
-.pro-portfolio ul {
-  list-style-type: none;
-  text-align: left;
-  margin-right: 5%;
-}
-
-.pro-portfolio a{
-  text-decoration: none;
-  color: white;
-}
-
-.byline {
-  color: black;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
 }
 
 @media only screen and (min-width: 640px) {
@@ -101,17 +54,11 @@ article.portfolio-view {
   .main-nav ul li:hover a {
     color: #29506D;
   }
-  article.portfolio-view {
+  article.projects{
     display: inline-block;
     width: 45%;
     margin: 2% 1%;
   }
-.abouti {
-  width: 80%;
-  display: inline-block;;
-  margin: auto;
-}
-
 
   @media screen and (min-width:855px) {
   article.portfolio-view {
@@ -119,8 +66,3 @@ article.portfolio-view {
     width: 30%;
     margin: 2% 1%;
   }
-  .abouti {
-    width: 28%;
-    display: inline-block;;
-    margin: 2%;
-}

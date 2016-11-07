@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <title>My Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="icon" type="image/x-icon" href="https://i.imgur.com/7v5ASc8.png">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Allura|Bad+Script|Calligraffitti|Crafty+Girls|Grand+Hotel|Great+Vibes|Marck+Script|Niconne|Parisienne|Pinyon+Script|Reenie+Beanie|Roboto|Sacramento|Yesteryear" rel="stylesheet">
-    <title>My Profile</title>
+    <script src="https://use.fontawesome.com/7987ffcc0d.js"></script>
     <script id="project-template" type="text/x-handlebars-template">
         <img src="{{imgUrl}}">
         <p>{{body}}</p>
@@ -20,74 +21,23 @@
 
 <body>
     <header>
-        <nav class="header-menu">
-            <div class="menu-icon-div">
-                <span class="icon-menu"></span>
-            </div>
-            <ul class="header-menu-ul">
-                <a href="#" title="Home" class="contentBtn" data-content="home-top-third">
-                    <li><span class="icon-home"></span> <span class="hide">Home</span></li>
-                </a>
-                <a href="https://github.com/regenalgrant" title="Github">
-                    <li><span class="icon-github"></span> <span class="hide">Github</span></li>
-                </a>
-                <a href="https://www.linkedin.com/in/Regenal Grant" title="LinkedIn">
-                    <li><span class="icon-linkedin"></span> <span class="hide">LinkedIn</span></li>
-                </a>
-                <a href="#" title="About me" class="contentBtn" data-content="home-middle-third">
-                    <li><span class="icon-profile"></span> <span class="hide">REGENAL GRANT</span></li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <div id="page-wrap">
-        <h5>Heijnen Group</h5>
-        <h4>"New shocking power in asymetric Cybersecurity"</h4>
-        <header class="site-header">
-            <section class="heading-group-h1"></section>
-            <div class id="wrap">
-                <input id="toggle" type="checkbox"></input>
-                <label for="toggle" class="hamburger">
-<div class="top-bun"></div>
-<div class="meat"></div>
-<div class="bottom-bun"></div>
-</label>
-                <div class="nav">
-                    <div class="nav-wrapper">
-                        <nav class="main-nav">
-                            <nav class="header-menu">
-                                <div class="menu-icon-div">
-                                    <span class="icon-menu"></span>
-                                    <ul class="header-menu-ul">
-                                        <h4 class="index-title"></h4>
-                                        </section>
-                                        <li class="tab" data-content="home"><a href="">Home</a>
-                                            <br>
-                                            <li class="tab" data-content="subject"><a href="">Subject</a>
-                                                <br>
-                                                <li class="tab" data-content="profile"><a href="">Profile</a>
-                                                    <br>
-                                                    <li class="tab" data-content="contact">
-                                                        <a href="">Contact</a>
-                                                        <br>
-                            </nav>
-                            </div>
-                    </div>
-                </div>
-            </div>
-    </div>
+<nav class="main-nav">
+<i class="fa fa-bars" aria-hidden="true"></i>
+<ul>
+<li class="tab"data-content="projects"><i class="fa fa-home" aria-hidden="true"> Home</i></li>
+<li class="tab" data-content="aboutme"><i class="fa fa-user-circle-o" aria-hidden="true"> About</i></li>
+</ul>
+</nav>
     </header>
     <main>
-      <section id="projects" class="tab-content"</section>
+      <section id="projects" class="tab-content"></section>
         <section id="aboutme" class="tab-content">
-            <h6 class="index-title">Regenal Grant Portfolio </h6>
+            <h2 class="index-title">Regenal Grant Portfolio </h2>
             <article class="portfolio-view" data-category="category">
                 <h1 id="title-portfolio-item">Personal Bio</h1>
-                <a href="" id="data/Aricle.json"><img src="image/7.png" alt="" id="2"></a>
+                <a href="" id="data/Article.json"><img src="image/7.png" alt="" id="2"></a>
                 <p class="body-portfolio" style="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                    est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
-                    sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt
-                    quis, accumsan porttitor, facilisis luctus, metus</p>
+                    est. Mauris placerat eleifend leo. </p>
                 <br>
                 <a href="#" class="read-on">Show Less</a>
             </article>

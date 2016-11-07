@@ -1,36 +1,32 @@
-.pull-left {
-  float: left;
+
+.img {
+max-width: 65%;
 }
 
-.pull-right {
-  float: right;
+.main-nav{
+color:black;
 }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+.index-title{
+font-size:2em;
+color: black;
 }
-
-.heading-group-h1 {
-  max-width: 80%;
+.title-portfolio-item{
+  font-size:2em;
+  color: black;
 }
-
-#filters select {
-  width: 30%;
-  margin: .1em 5%;
-  padding-bottom: 110%;
-
+.body-portfolio{
+  font-size:2em;
+  color: black;
 }
-
-@media only screen and (min-width: 640px) {
-  .heading-group-h1 {
-    padding: .1em .1em .1em 2em;
-    float: none;
-  }
-
-  #filters li {
-    width: 20em;
-    display: inline;
-  }
+.read-on{
+  font-size:2em;
+  color: black;
+}
+#data/Article.json{
+font-size:2em;
+color: black;
+}
+#projects{
+  font-size:1em;
+  color: black;
 }

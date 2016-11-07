@@ -1,11 +1,18 @@
 var projectV = {};
 
 projectV.handleMainNav = function () {
-  $('.header-menu').on('click', '.contentBtn', function() {
-    $('.contentBtn-content').hide();
-    var $idContent = $(this).data().content;
-    $('#' + $idContent).show();
-    $idContent = '';
+  $('.main-nav').on('click', '.tab', function() {
+    $('.tab-content').hide();
+    console.log($(this)[0].attributes[1].value);
+    $('main section[id=\"' + $(this)[0].attributes[1].value + '\"]').fadeIn();
   });
-  $('.header-menu .contentBtn:first').click();
 };
+
+projectV.render = function () {
+  Project.projects.forEach(function (article) {
+    $('#projects').append(article.toHtml());
+  });
+  projectV.handleMainNav();
+};
+
+Project.getJson();
