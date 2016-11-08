@@ -20,14 +20,13 @@
 }
 .main-nav li {
   margin-right: .4em;
-  font-size: 1.5em;
+  font-size: 2.0em;
   padding: .5em .2em;
   border-bottom: 1px solid #ccc;
 }
 
-
-.template {
-  display: none;
+.portfolio-view{
+  display:block;
 }
 article.projects {
   display: inline;
@@ -40,9 +39,16 @@ article.projects {
     display: none;
   }
   .main-nav {
-    padding: .2em .2em .2em 2em;
+    background-image: url(/image/background.png);
+    display: block;
+    /*padding: .2em .2em .2em 2em;*/
+    position:fixed;
+    height: 35%;
+    width:100%
+
   }
   .main-nav ul {
+    margin-top: 10%;
     display: block;
   }
 
