@@ -61,7 +61,7 @@ article.projects {
   }
 
   @media screen and (min-width:855px) {
-  article.portfolio-view {
+  article.project-view {
     display: inline-block;
     width: 30%;
     margin: 2% 1%;

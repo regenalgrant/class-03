@@ -1,3 +1,17 @@
+body {
+clear: both;
+  width:100%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 100%;
+  color: tomato;
+  display: inline-block;
+  background-repeat: no-repeat;
+  /*background: -moz-linear-gradient(right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  /*background: -webkit-linear-gradient(right, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%); */
+  background: linear-gradient(to right, rgba(0,0,0,1.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+overflow-x: hidden;
 
 .img {
 max-width: 65%;
@@ -27,6 +41,6 @@ font-size:2em;
 color: black;
 }
 #projects{
-  font-size:1em;
-  color: black;
+  font-size:1.5em;
+  color: tomato;
 }
